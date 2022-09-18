@@ -1,0 +1,573 @@
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --hover-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --primary-background-color: #f5f4fa;
+  --secondary-background-color: #2f303a;
+  --project-gap: 30px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primery-text-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* header start */
+
+header {
+  border-bottom: 1px solid #ececec;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-nav {
+  display: flex;
+}
+
+.container-nav,
+.contacts-list {
+  align-items: center;
+}
+
+.site-nav.list {
+  display: flex;
+}
+
+.list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.contacts.list {
+  display: flex;
+}
+
+.contacts-item {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-icon {
+  display: flex;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.section-address a:hover,
+.section-address a:focus {
+  color: #2196f3;
+}
+
+.section-address ul {
+  padding-inline-start: 15px;
+  margin-top: 0px;
+  list-style: none;
+}
+
+.logo span {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  min-width: 145px;
+  max-width: 170px;
+
+  margin-right: 93px;
+}
+
+.logo:hover {
+  color: #2196f3;
+}
+
+.site-nav .link.curent {
+  font-family: "Roboto";
+  color: var(--accent-color);
+}
+
+.site-nav a {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: inline-block;
+}
+
+.contacts-link {
+  display: flex;
+  margin: 0;
+  color: var(--primery-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  fill: currentColor;
+
+  transition-property: color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+
+.site-nav.list li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts.list li:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* header end */
+
+/* <!-- Кнопки фільтра --> */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.button button {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  list-style: none;
+  cursor: pointer;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border-style: none;
+  padding: 6px 22px;
+
+  transform: scale(1);
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.button-list li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button button:hover,
+.button button:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+
+  transform: scale(1.1);
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+/* Проєкти */
+
+.projects {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 94px;
+
+  margin-left: calc(-1 * var(--project-gap));
+  margin-top: calc(-1 * var(--project-gap));
+}
+
+.projects > .item-projects {
+  flex-basis: calc(100% / 3 - var(--project-gap));
+
+  margin-left: var(--project-gap);
+  margin-top: var(--project-gap);
+}
+
+.projects h2 {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin: 0px;
+  margin-bottom: 4px;
+}
+
+.card-text {
+  color: var(--primery-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  margin: 0px;
+}
+
+.card-content {
+  padding: 20px 24px;
+}
+
+.item-projects {
+  border: 1px solid #eeeeee;
+}
+
+.card-link {
+  text-decoration: none;
+  display: inline-block;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.card.thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-link:hover .overlay,
+.card-link:focus .overlay {
+  transform: translateY(0);
+}
+
+.overlay {
+  position: absolute;
+  transform: translateY(101%);
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--accent-color);
+  opacity: 0.9;
+
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.card-desc {
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+.card-link:hover,
+.card-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* Футер */
+
+.section-footer {
+  background-color: var(--secondary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section-address .item {
+  color: #ffffff;
+}
+
+.section-address .mail,
+.section-address .tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.section-address .item,
+.section-address .mail,
+.section-address .tel {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  transition-property: color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.section-address .item:hover,
+.section-address .item:focus {
+  color: var(--accent-color);
+  transform: scale(1.2);
+}
+
+.section-address .tel:hover,
+.section-address .tel:focus {
+  color: var(--accent-color);
+  transform: scale(1.2);
+}
+
+.section-address .mail:hover,
+.section-address .mail:focus {
+  color: var(--accent-color);
+  transform: scale(1.2);
+}
+
+.section-address ul {
+  margin: 0px;
+  padding: 0px;
+  margin-right: 70px;
+}
+
+.section-footer {
+  background-color: var(--secondary-background-color);
+}
+
+.container-footer {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-footer a {
+  text-decoration: none;
+}
+
+.container-footer .logo {
+  color: white;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.section-address li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-icon-text {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer-icon {
+  fill: #ffffff;
+}
+
+.footer-socials.list {
+  display: flex;
+  gap: 10px;
+  margin-right: 93px;
+}
+
+.footer-link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--accent-color);
+  transform: scale(1.2);
+}
+
+.email-form-title {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.email-form-field {
+  display: inline-block;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
+  background-color: transparent;
+  outline-color: tr;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition-property: outline-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.email-form-field:focus {
+  outline-color: var(--accent-color);
+}
+
+.btn-form-email {
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.87;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: var(--accent-color);
+
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  padding: 10px 28px;
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.btn-form-email:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.email-icon-send {
+  fill: #ffffff;
+  margin-left: 10px;
+}
+
+/* Позиціонування та переходи хедер start */
+
+.link.curent::after {
+  display: block;
+  position: absolute;
+  content: "";
+
+  width: 48px;
+  height: 4px;
+  bottom: -1px;
+  right: 0;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+/* Чому не Працює? */
+.link.curent:hover::after {
+  transform: none;
+}
+
+.link {
+  transform: scale(1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.link:hover {
+  transform: scale(1.1);
+}
+
+.contacts-link {
+  transform: scale(1);
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.contacts-link:hover {
+  transform: scale(1.1);
+}
+
+.site-nav.item {
+  position: relative;
+}
+
+/* Позиціонування та переходи хедер end */
