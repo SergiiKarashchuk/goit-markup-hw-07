@@ -1,12 +1,15 @@
-$primery-text-color: #757575;
-$title-text-color: #212121;
-$hover-text-color: #ffffff;
-$accent-color: #2196f3;
-$primary-background-color: #f5f4fa;
-$secondary-background-color: #2f303a;
-$hero-color: #ffffff;
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --hover-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --primary-background-color: #f5f4fa;
+  --secondary-background-color: #2f303a;
+  --hero-color: #ffffff;
+  --project-gap: 30px;
 
-$cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* Цвет заголовков #212121 */
 
@@ -26,4 +29,3 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--primery-text-color);
 }
-

@@ -29,7 +29,6 @@ body {
   color: var(--primery-text-color);
 }
 
-
 /* HEADER START */
 
 header {
@@ -60,7 +59,6 @@ header {
 
 .nav__list {
   display: flex;
-  
 }
 
 .list {
@@ -71,7 +69,6 @@ header {
 
 .contacts {
   display: flex;
-  
 }
 
 .contacts__item {
@@ -87,8 +84,6 @@ header {
   border: none;
   background-color: #ffffff;
 }
-
-
 
 .container__logo-span {
   font-family: "Raleway", sans-serif;
@@ -207,11 +202,9 @@ header {
 
 /* Позиціонування та переходи */
 
- /* HEADER END */ 
+/* HEADER END */
 
-
- /* Hero */
-
+/* Hero */
 
 .hero {
   padding-top: 200px;
@@ -310,19 +303,16 @@ header {
 .benefits {
   display: flex;
   list-style: none;
-
 }
-
 
 .benefits__list {
   display: flex;
 
- padding: 0;
- margin: 0;
+  padding: 0;
+  margin: 0;
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 
 .benefits__item {
   display: flex;
@@ -350,11 +340,11 @@ header {
 
 /* Послуги */
 
-.projects {
+.services {
   padding-bottom: 94px;
 }
 
-.project__title {
+.services__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -368,21 +358,21 @@ header {
   margin-top: 0px;
 }
 
-.project__list {
+.services__list {
   display: flex;
   margin: 0px;
   padding: 0px;
 }
 
-.project__item:not(:last-child) {
+.services__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.project__img {
+.services__img {
   display: block;
 }
 
-.project__text {
+.services__text {
   position: absolute;
   display: flex;
   bottom: 0;
@@ -405,7 +395,7 @@ header {
   text-transform: uppercase;
 }
 
-.project__item {
+.services__item {
   position: relative;
 }
 
@@ -437,7 +427,6 @@ header {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  
 }
 
 .heands__h2 {
@@ -453,11 +442,9 @@ header {
   text-align: center;
 }
 
-
 .heands__position {
   padding: 30px;
 }
-
 
 .heands__name {
   margin-top: 30px;
@@ -468,7 +455,6 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
 
 .heands__position {
   display: block;
@@ -481,7 +467,7 @@ header {
   margin: 0;
   padding: 0;
   margin-top: 10px;
-padding: 0;
+  padding: 0;
 }
 
 .socials__list {
@@ -591,7 +577,6 @@ padding: 0;
 
 .footer__link {
   color: #ffffff;
-
 }
 
 .footer__contacts {
@@ -613,13 +598,11 @@ padding: 0;
 .footer__link:hover,
 .footer__link:focus {
   color: var(--accent-color);
-
 }
 
 .footer__contacts:hover,
 .footer__contacts:focus {
   color: var(--accent-color);
-
 }
 
 .footer__address-group {
@@ -627,7 +610,6 @@ padding: 0;
   padding: 0px;
   list-style: none;
 }
-
 
 .footer {
   background-color: var(--secondary-background-color);
@@ -653,7 +635,6 @@ padding: 0;
 }
 
 .footer__logo {
-
   display: inline-block;
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
@@ -668,8 +649,6 @@ padding: 0;
   min-width: 145px;
   max-width: 170px;
 }
-
-
 
 .footer__item:not(:last-child) {
   margin-bottom: 9px;
@@ -698,19 +677,16 @@ padding: 0;
 
 .footer-socials__icon {
   fill: #ffffff;
-
-
 }
 
 .footer-socials__list {
   display: flex;
   gap: 10px;
-margin: 0;
+  margin: 0;
   padding: 0;
   margin-right: 93px;
   list-style: none;
 }
-
 
 .footer-socials__link {
   width: 44px;
@@ -720,8 +696,6 @@ margin: 0;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  
-
 
   transition-property: background-color, transform;
   transition-duration: 250ms;
@@ -906,7 +880,6 @@ margin: 0;
   color: var(--primery-text-color);
 }
 
-
 .register-form__title {
   display: block;
 
@@ -992,15 +965,11 @@ margin: 0;
   fill: var(--accent-color);
 }
 
-.checkbox__input:checked
-  + .checkbox__icons
-  .checkbox__icon-checked {
+.checkbox__input:checked + .checkbox__icons .checkbox__icon-checked {
   opacity: 1;
 }
 
-.checkbox__input:checked
-  + .checkbox__icons
-  .checkbox__icon-no-checked {
+.checkbox__input:checked + .checkbox__icons .checkbox__icon-no-checked {
   opacity: 0;
 }
 
@@ -1052,11 +1021,7 @@ margin: 0;
 .btn-submit:hover {
   cursor: pointer;
   transform: scale(1.05);
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
 
 /* Модальне вікно end*/
-
-
-
-
