@@ -1,18 +1,5 @@
 /* <!-- Кнопки фільтра --> */
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 .button__btn {
   color: var(--title-text-color);
   font-weight: 500;
@@ -29,21 +16,21 @@
   transform: scale(1);
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    transform: scale(1.1);
+  }
 }
 
 .button__item:not(:last-child) {
   margin-right: 8px;
-}
-
-.button__btn:hover,
-.button__btn:focus {
-  color: #ffffff;
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-
-  transform: scale(1.1);
 }
 
 .button__list {
@@ -111,16 +98,22 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
+
+  &:hover .services__overlay,
+  &:focus .services__overlay {
+    transform: translateY(0);
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .services__card {
   position: relative;
   overflow: hidden;
-}
-
-.services__card-link:hover .services__overlay,
-.services__card-link:focus .services__overlay {
-  transform: translateY(0);
 }
 
 .services__overlay {
@@ -147,10 +140,4 @@
   letter-spacing: 0.03em;
 
   color: #ffffff;
-}
-
-.services__card-link:hover,
-.services__card-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
