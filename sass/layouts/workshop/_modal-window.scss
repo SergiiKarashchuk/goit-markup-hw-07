@@ -58,12 +58,13 @@
   transition-property: transform;
   transition-duration: 650ms;
   transition-timing-function: var(--cubic-bezier);
-}
 
-.btn-cross:hover {
-  cursor: pointer;
-  fill: var(--accent-color);
-  transform: rotate(180deg);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: var(--accent-color);
+    transform: rotate(180deg);
+  }
 }
 
 .register-form__group {
@@ -79,6 +80,7 @@
   padding-left: 42px;
   margin: 0;
 
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
   transition-property: border-color;
@@ -178,6 +180,13 @@
 
 .checkbox__icon-no-checked {
   opacity: 1;
+  fill: #212121;
+}
+
+.checkbox__input:hover + .checkbox__icons .checkbox__icon-no-checked {
+  fill: var(--accent-color);
+}
+.checkbox__input:focus + .checkbox__icons .checkbox__icon-no-checked {
   fill: var(--accent-color);
 }
 

@@ -1,6 +1,6 @@
 /* <!-- Кнопки фільтра --> */
 
-.button__btn {
+.button-menu__btn {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -29,11 +29,11 @@
   }
 }
 
-.button__item:not(:last-child) {
+.button-menu__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.button__list {
+.button-menu {
   display: flex;
   justify-content: center;
   list-style: none;
